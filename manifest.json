@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "X-Cleaner: Auto Delete",
+  "version": "1.0",
+  "description": "Automated tweet deletion with date filtering.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://twitter.com/*", "https://x.com/*"]
+}

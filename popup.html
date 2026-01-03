@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .header { font-weight: bold; margin-bottom: 10px; color: #1d9bf0; }
+    input { width: 100%; margin-bottom: 10px; padding: 5px; box-sizing: border-box; }
+    button { width: 100%; background: #1d9bf0; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 20px; font-weight: bold; }
+    button:hover { background: #1a8cd8; }
+    #stats { margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee; }
+    .count-box { font-size: 24px; font-weight: bold; color: #333; }
+    .label { font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="header">X-Cleaner Pro</div>
+  <label class="label">Delete tweets older than:</label>
+  <input type="date" id="cutoffDate">
+  <button id="startBtn">Start Deleting</button>
+
+  <div id="stats">
+    <div class="label">TWEETS REMOVED</div>
+    <div id="counter" class="count-box">0</div>
+    <div id="status" class="label" style="color: #1d9bf0; margin-top: 5px;">Idle</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
